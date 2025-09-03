@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { SparklesIcon } from "lucide-react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router-dom"; // ✅ use react-router-dom
 import useSignUp from "../hooks/useSignUp";
 
 const SignUpPage = () => {
@@ -11,10 +11,15 @@ const SignUpPage = () => {
   });
 
   const { isPending, error, signupMutation } = useSignUp();
+  const navigate = useNavigate(); // ✅ init here
 
-  const handleSignup = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    signupMutation(signupData);
+    signupMutation(signupData, {
+      onSuccess: () => {
+        navigate("/login"); // ✅ works now
+      },
+    });
   };
 
   return (
@@ -40,7 +45,7 @@ const SignUpPage = () => {
           <h2 className="text-2xl font-semibold text-gray-800 mb-2">
             Create an Account
           </h2>
-          <form onSubmit={handleSignup} className="space-y-5">
+          <form onSubmit={handleSubmit} className="space-y-5"> {/* ✅ fixed name */}
             {/* Full Name */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
