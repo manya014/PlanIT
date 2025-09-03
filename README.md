@@ -91,5 +91,4 @@ Developed with ❤️ by **[Manya Rawat](https://github.com/manya014)**
 
 ```
 
-Do you want me to **customize this README for the exact features and stack** you used in PlanIT (like the one with authentication, tasks dashboard, etc.) or should I leave it general like above?
-```
+
