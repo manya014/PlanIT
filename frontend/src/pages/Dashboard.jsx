@@ -1,11 +1,12 @@
 // Dashboard.jsx
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
-import Sidebar from "../components/SideBar";
+import Sidebar from "../components/SidePanel";
 import Header from "../components/Header";
 import TaskFilter from "../components/TaskFilters";
 import TaskTable from "../components/TaskTable";
 import TaskModal from "../components/TaskModal.jsx";
 import { getTasks, createTask, updateTask, deleteTask } from "../lib/api.js";
+import SidePanel from '../components/SidePanel';
 
 const Dashboard = () => {
   const [tasks, setTasks] = useState([]);
@@ -88,7 +89,7 @@ const Dashboard = () => {
   return (
     <div className="flex min-h-screen bg-gray-100 font-sans">
       {/* Sidebar - Stretches to full height */}
-      <Sidebar className="h-screen sticky top-0" />
+      <SidePanel className="h-screen sticky top-0" />
 
       {/* Main Content */}
       <div className="flex-1 flex flex-col w-70">
