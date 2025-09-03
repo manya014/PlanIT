@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import useAuthUser from "../hooks/useAuthUser.js";
 import useLogout from "../hooks/useLogout.js";
 
-const Sidebar = () => {
+const SideBar = () => {
   const { setAuthUser } = useAuthUser();
   const navigate = useNavigate();
   const { logoutMutation } = useLogout();
@@ -36,4 +36,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default SideBar;
