@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+.backdrop-blur-overlay {
+  background-color: rgba(0, 0, 0, 0.3); /* Keep or adjust the subtle dark overlay */
+  backdrop-filter: blur(15px); /* Increased blur amount */
+  -webkit-backdrop-filter: blur(15px); /* For Safari support */
+}
