@@ -1,4 +1,4 @@
-````markdown
+
 # 📅 PlanIT
 
 PlanIT is a task and project management application designed to help individuals and teams stay organized, boost productivity, and achieve goals efficiently.  
@@ -23,6 +23,7 @@ PlanIT is a task and project management application designed to help individuals
 - **Other Tools:** JWT Authentication, REST APIs  
 
 ---
+````markdown
 
 ## 📦 Installation
 
