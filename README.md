@@ -89,6 +89,5 @@ This project is licensed under the **MIT License**.
 
 Developed with ❤️ by **[Manya Rawat](https://github.com/manya014)**
 
-```
 
 
